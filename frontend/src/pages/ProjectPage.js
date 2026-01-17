@@ -18,7 +18,7 @@ function ProjectPage() {
         setChatMessage('');
 
         try {
-            const url = "http://localhost:8080/api/chat";
+            const url = "https://chatwithai-4req.onrender.com/api/chat";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
@@ -45,7 +45,7 @@ function ProjectPage() {
     useEffect(() => {
         const fetchChatHistory = async () => {
             try {
-                const url = `http://localhost:8080/api/chat/history?projectId=${projectId}`;
+                const url = `https://chatwithai-4req.onrender.com/api/chat/history?projectId=${projectId}`;
                 const response = await fetch(url, {
                     headers: {
                         'Authorization': localStorage.getItem('token')

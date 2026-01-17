@@ -11,7 +11,7 @@ function Dashboard() {
 
     const fetchProjects = async () => {
         try {
-            const url = "http://localhost:8080/api/projects";
+            const url = "https://chatwithai-4req.onrender.com/api/projects";
             const response = await fetch(url, {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -31,7 +31,7 @@ function Dashboard() {
     const handleCreateProject = async (e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:8080/api/projects";
+            const url = "https://chatwithai-4req.onrender.com/api/projects";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

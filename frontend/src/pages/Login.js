@@ -24,7 +24,7 @@ function Login() {
     }
     console.log(loginInfo);
     try {
-      const url = "http://localhost:8080/auth/login";
+      const url = "https://chatwithai-4req.onrender.com/auth/login";
       const responce = await fetch(url, {
         method: "POST",
         headers: {

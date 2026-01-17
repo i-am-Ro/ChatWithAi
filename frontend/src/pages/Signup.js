@@ -26,7 +26,7 @@ function Signup() {
     }
     console.log(signupInfo);
     try {
-      const url = "http://localhost:8080/auth/signup";
+      const url = "https://chatwithai-4req.onrender.com/auth/signup";
       const responce = await fetch(url, {
         method: "POST",
         headers: {
